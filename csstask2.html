@@ -1,45 +1,86 @@
-<html>
-    <head>
-        <title>
-            Task 1
-        </title>
-        <Style>
-            table, tr,th,td{
-                border-radius: 20px;
-                border-color: black;
-                background-color: aquamarine;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            
-            body{
-                text-align: center;
-            }
-        </Style>
-    </head>
-    <body>
-        <h1>Task 1</h1>
-        <table border="2">
-            <tr>
-                <th width = "300">Firstname</th>
-                <th width = "300">Lastname</th>
-                <th width = "300">Age</th>
-            </tr>
-            <tr>
-                <td>Jill</td>
-                <td>Smith</td>
-                <td>50</td>
-            </tr>
-            <tr>
-                <td>Eve</td>
-                <td>Jackson</td>
-                <td>94</td>
-            </tr>
-            <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>80</td>
-            </tr>
-        </table>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task2(css)</title>
+    <style>
+        h4{
+    margin:80px;
+    margin-bottom:25px;
+    margin-left:90px;
+}
+table{
+    border-collapse:collapse;
+    width:180px;
+    margin-left:80px;
+    height: 190px;
+}
+ul{
+    list-style-type: none;
+    width:150px;
+    background-color: skyblue ;
+    margin:0px;
+    padding:0px;
+    margin-left:10px;
+    margin-right:10px;
+}
+li a{
+    color:darkblue;
+    text-decoration:none;
+    padding:8px 16px;
+    display:block;
+}
+li a.active{
+    background:orange;
+    color:white;
+}
+ull{
+  margin: 0;
+  padding: 0;
+}
+div a{
+    display: block;
+    color: darkblue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border:black;
+    background-color:lightgray;
+}
+div a{
+    float: left;
+    border-right:1px solid darkblue;
+}
+.act{
+    background:gray;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <h4>Vertical Navigation Bar</h4>
+    <table border="1px">
+        <tr>
+            <td>
+                <ul>
+                  <li><a class="active" href="#home">Home</a></li>
+                  <li><a href="#java">Java</a></li>
+                  <li><a href="#css">CSS</a></li>
+                  <li><a href="#html">HTML</a></li>
+                  <li><a href="#bootstrap">Bootstrap</a></li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <h4>Horizontal Navigation Bar</h4>
+    <ull>
+      <div><a class="act" href="#home">Home</a></div>
+      <div><a href="#java">Java</a></div>
+      <div><a href="#css">CSS</a></div>
+      <div><a href="#html">HTML</a></div>
+      <div><a href="#bootstrap">Bootstrap</a></div>
+    </ull>
+</body>
 </html>
